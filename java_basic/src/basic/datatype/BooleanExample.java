@@ -1,0 +1,20 @@
+package basic.datatype;
+
+public class BooleanExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//키워드만 인식
+		boolean b1 = true;
+		boolean b2 = false;
+		
+//		boolean b3 = True;
+//		boolean b4 = False;
+//		boolean b5 = 0;
+//		boolean b6 = "논리형 타입";
+//		
+
+	}
+
+}
