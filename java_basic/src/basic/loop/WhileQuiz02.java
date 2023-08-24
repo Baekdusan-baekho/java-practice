@@ -28,6 +28,7 @@ public class WhileQuiz02 {
 		int ss = 0;
 
 		
+		if(ee<=oo) {
 		while(ee<=oo) {
 			
 			ss = (ss+ee);
@@ -36,6 +37,18 @@ public class WhileQuiz02 {
 			
 
 			
+		}
+		}
+		if(oo<=ee) {
+			while(oo<=ee) {
+				
+				ss = (ss+oo);
+				
+				oo++;
+				
+				
+				
+			}
 		}
 		System.out.println("누적합계: "+ss);
 		
