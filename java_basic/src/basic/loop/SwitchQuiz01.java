@@ -21,6 +21,10 @@ public class SwitchQuiz01 {
 		String rr = sc.next();
 		System.out.print("두번째 정수를 입력해주세요: ");
 		int vv = sc.nextInt();
+		// 깃발 전략!!!!!!!!!!!!!!
+		//불린형 True False로 만들고 해당 상황 if가 트루일 때 True출력하고
+		//다음 조건에서 int flag 가 트루인 상황에서 이벤트 발생
+		boolean flag = true;
 		
 		switch(rr) {
 		
@@ -37,15 +41,23 @@ public class SwitchQuiz01 {
 			break;
 			
 		case "/":
-			System.out.println((float) ii/vv);
-			break;
+			if(vv==0) {
+				System.out.println("두번째 정수에 0을 입력하지 마시오");
+				flag = false;
+				break;
+				
+			}else {
+			 System.out.println((double) ii/vv);
+			break;}
 			
 		default:
 			System.out.println("잘못된 입력입니다.");
 		}
-		sc.close();
+		if(!flag) { //not true
+			System.out.println("0을 입력했다");
+		}
 		
-
+		sc.close();
 	}
 
 }

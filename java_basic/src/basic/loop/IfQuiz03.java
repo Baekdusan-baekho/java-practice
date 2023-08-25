@@ -28,6 +28,8 @@ public class IfQuiz03 {
 		int mid = 0;
 		int min = 0;
 		
+		// int max, mid, min = 0;
+		
 		if(add1>add2 && add1>add3) {
 			if(add2>add3 || add3>add2) {
 			max = add1;

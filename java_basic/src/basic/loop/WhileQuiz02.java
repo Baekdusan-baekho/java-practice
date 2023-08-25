@@ -25,34 +25,48 @@ public class WhileQuiz02 {
 		System.out.print("Y정수를 입력해주세요");
 		int oo = sc.nextInt();
 		
+		//깔끔
+		int ee1= ee;
+		int oo1= oo;
 		int ss = 0;
+		
+		if(oo<=ee) {
+			oo = ee1;
+			ee = oo1;
+		}
+		
+		// 다른 방식 작은값 부터 큰 값까지의 누적합계:
+		// 큰값 작은값 으로 인수 2개를 받을 경우
+//		int start = (ee > oo ? oo:ee) ;
+//		int end = (ee > oo ? ee:oo) ;
+//		while(ee<=end) {
+//			ss = ss+start;
+//			start++;
+//		}
+		
+		while(ee<=oo) {
+			ss = ss+ee;
+			ee++;
+		}
 
 		
-		if(ee<=oo) {
-		while(ee<=oo) {
-			
-			ss = (ss+ee);
-
-			ee++;
-			
-
-			
-		}
-		}
-		if(oo<=ee) {
-			while(oo<=ee) {
-				
-				ss = (ss+oo);
-				
-				oo++;
-				
-				
-				
-			}
-		}
+		
+		//내가 한거
+//		if(ee<=oo) {
+//		    while(ee<=oo) {
+//			 ss = ss+ee;
+//			 ee++;
+//		    }
+//		}
+//		else if(oo<=ee) {
+//			while(oo<=ee) {
+//			 ss = ss+oo;
+//			 oo++;
+//			}
+//		}
 		System.out.println("누적합계: "+ss);
 		
-		
+		sc.close();
 
 	}
 
