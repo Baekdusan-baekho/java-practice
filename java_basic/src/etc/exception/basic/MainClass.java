@@ -31,7 +31,8 @@ public class MainClass {
 				int aa = sc.nextInt(); //값이 버퍼로 들어감
 				System.out.printf("%d + %d = %d",i, aa, i+aa);
 				break;
-			}catch(Exception e){
+			}catch(Exception e){ 
+				//Exception 타입(많이 함유함)이고 e는 변수 이름이다 e의 객체선언같이 
 				System.out.println("정수로만 입력하세요!");
 				sc.nextLine(); //버퍼에서 쓸모 없는 값을 빼내서 버린다
 			}
