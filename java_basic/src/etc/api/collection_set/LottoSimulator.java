@@ -100,15 +100,17 @@ public class LottoSimulator {
 	         나머지 -> 꽝
 	         */
 	    	
+	    	List<Integer> iter = (java.util.List<java.lang.Integer>) bb.listIterator();
+	    	
 	   
 	    	
 	    	while(true) {
-	    		if(a.contains(bb.get(0))){
-	    			if(a.contains(bb.get(1))){
-	    				if(a.contains(bb.get(2))){
-	    					if(a.contains(bb.get(3))){
+	    		if(a.contains(iter)){
+	    			if(a.contains(iter)){
+	    				if(a.contains(iter)){
+	    					if(a.contains(iter)){
 	    						if(a.contains(bb.get(4))){
-	    							if(a.contains(bb.get(4))){
+	    							if(a.contains(bb.get(5))) {
 	    								System.out.println("1등 당첨");
 	    								prize1++;
 	    								break;
@@ -129,7 +131,7 @@ public class LottoSimulator {
 	    	}
 	    	failCnt = prize1+prize2+prize3+prize4+prize5;
 		
-			return failCnt;
+			return prize1;
 	    }
 			
 			
@@ -159,7 +161,7 @@ public class LottoSimulator {
 		List<Integer> win = createLotto();
 		int bonusNum = createBonusNum(win);
 		
-		int lll = checkLottoNumber(win, random1, bonusNum);
+		int lll = checkLottoNumber(random1, win, bonusNum);
 		
 		
 		
@@ -175,7 +177,8 @@ public class LottoSimulator {
 
 		while(true) {
 	
-//			System.out.println("자동: "+createLotto());
+			System.out.println("자동: "+createLotto());
+			
 
 			
 			/*
