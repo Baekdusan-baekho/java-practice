@@ -1,4 +1,4 @@
-package etc.api.utill.random;
+package etc.api.util.random;
 
 import java.util.Random;
 

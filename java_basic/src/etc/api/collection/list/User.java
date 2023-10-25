@@ -1,4 +1,4 @@
-package etc.api.collection_list;
+package etc.api.collection.list;
 
 public class User {
 	

@@ -1,4 +1,4 @@
-package etc.api.collection_set;
+package etc.api.collection.set;
 
 import java.util.ArrayList;
 import java.util.Collections;

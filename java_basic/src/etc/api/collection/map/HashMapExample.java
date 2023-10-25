@@ -1,4 +1,4 @@
-package etc.api.collection_map;
+package etc.api.collection.map;
 
 import java.util.HashMap;
 import java.util.Map;
