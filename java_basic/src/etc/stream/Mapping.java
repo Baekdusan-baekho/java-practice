@@ -85,7 +85,7 @@ public class Mapping {
                 .map(dish -> new DishNameType(dish))
                 .collect(Collectors.toList())
                 .forEach(ds -> System.out.println("ds = " + ds));
-        
+
 
 
 
